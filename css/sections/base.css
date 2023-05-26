@@ -1,0 +1,128 @@
+:root {
+  --clr-primary: #24053e;
+  --clr-accent: #44ffa1;
+  --clr-gray: #584d62;
+  --clr-light: #fcf8ff;
+  --clr-white: #fff;
+}
+
+/*********************************
+      Reset Styles
+**********************************/
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+li {
+  list-style: none;
+}
+
+/*********************************
+      Base Styles
+**********************************/
+html {
+  font-size: 62.5%;
+}
+body {
+  font-size: 1.8rem;
+  line-height: 178%;
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Manrope", sans-serif;
+  color: var(--clr-primary);
+}
+/*********************************
+      Reusable Styles
+**********************************/
+/* 
+font-family: 'Fraunces', serif;
+font-family: 'Manrope', sans-serif;
+ */
+.container {
+  max-width: 111.4rem;
+  margin: 0 auto;
+}
+.heading--primary,
+.heading--secondary,
+.heading--tertiary {
+  font-family: "Fraunces", serif;
+  font-weight: 600;
+}
+.heading--primary {
+  font-size: 8rem;
+  line-height: 100%;
+}
+.underline {
+  position: relative;
+}
+.underline::after {
+  width: 100%;
+  height: 2.5px;
+  content: "";
+  position: absolute;
+  background-color: var(--clr-accent);
+  left: 0;
+  bottom: 8px;
+}
+.heading--secondary {
+  font-size: 5.6rem;
+  line-height: 114%;
+}
+.heading--tertiary {
+  font-size: 3.2rem;
+  line-height: 125%;
+}
+
+.btn:is(:link, :active) {
+  font-family: "Manrope", sans-serif;
+  font-weight: 700;
+  color: var(--clr-primary);
+  text-align: center;
+  letter-spacing: -0.18px;
+  border: 2px solid transparent;
+  transition: all 0.6s ease;
+  display: inline-block;
+  width: 19rem;
+  height: 6rem;
+  display: grid;
+  place-items: center;
+}
+
+.btn--primary:is(:link, :active) {
+  background-color: var(--clr-accent);
+  color: var(--clr-primary);
+}
+
+.btn--primary:is(:hover, :focus-visible) {
+  color: var(--clr-accent);
+  background-color: transparent;
+  border-color: var(--clr-accent);
+}
+
+.btn--secondary:is(:link, :active) {
+  color: var(--clr-white);
+  background-color: transparent;
+  position: relative;
+}
+.btn--secondary::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 1rem;
+  width: 80%;
+  height: 2.5px;
+  background-color: #44ffa1;
+}
+.btn--secondary:is(:hover, :focus-visible) {
+  color: var(--clr-accent);
+}
