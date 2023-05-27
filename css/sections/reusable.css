@@ -11,6 +11,9 @@
   font-size: 8rem;
   line-height: 100%;
 }
+header .heading--primary {
+  color: var(--clr-white);
+}
 .heading--secondary {
   font-size: 5.6rem;
   line-height: 114%;
@@ -56,6 +59,7 @@
 /* Buttons */
 
 .btn:link {
+  display: inline-block;
   width: 19rem;
   height: 6rem;
   display: grid;
@@ -100,4 +104,10 @@
 }
 .btn--secondary:is(:hover, :focus-visible) {
   color: var(--clr-accent);
+}
+
+.underline {
+  display: inline-block;
+  padding-bottom: 1px;
+  border-bottom: 2px solid var(--clr-accent);
 }
