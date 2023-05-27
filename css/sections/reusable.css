@@ -57,6 +57,7 @@ header .heading--primary {
 .container {
   max-width: 111.4rem;
   margin: 0 auto;
+  padding: 0 1rem;
 }
 
 /* Buttons */

@@ -1,0 +1,36 @@
+@media (width < 54em) {
+  html {
+    font-size: 50%;
+  }
+  header {
+    padding: 3.2rem 4rem;
+    height: 64rem;
+  }
+
+  .bg-pattern-1 {
+    left: -28rem;
+  }
+  .bg-pattern-2 {
+    top: 33.5rem;
+    right: -12rem;
+  }
+  .btn:link {
+    width: max-content;
+    height: 5.5rem;
+    padding: 0 2.4rem;
+  }
+  .mobile-screen {
+    max-width: 52rem;
+    height: 32rem;
+  }
+
+  .feature-box {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2.6rem;
+    max-width: 60rem;
+  }
+  .feature {
+    flex-direction: row;
+    gap: 3.2rem;
+  }
+}
