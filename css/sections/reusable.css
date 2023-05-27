@@ -1,0 +1,103 @@
+.heading--primary,
+.heading--secondary,
+.heading--tertiary {
+  color: var(--clr-primary);
+  font-family: "Fraunces", serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.heading--primary {
+  font-size: 8rem;
+  line-height: 100%;
+}
+.heading--secondary {
+  font-size: 5.6rem;
+  line-height: 114%;
+}
+.heading--tertiary {
+  font-size: 3.2rem;
+  line-height: 125%;
+}
+
+.para {
+  font-family: "Manrope", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 178%;
+  color: var(--clr-primary);
+}
+
+.number-bullet {
+  width: 5.6rem;
+  height: 5.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-family: "Fraunces", serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 2.4rem;
+  line-height: 167%;
+
+  text-align: center;
+  border: 1px solid var(--clr-primary);
+  color: var(--clr-primary);
+  border-radius: 50%;
+}
+
+.container {
+  max-width: 111.4rem;
+  margin: 0 auto;
+}
+
+/* Buttons */
+
+.btn:link {
+  width: 19rem;
+  height: 6rem;
+  display: grid;
+  place-items: center;
+
+  font-family: "Manrope", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.8rem;
+  line-height: 178%;
+
+  text-align: center;
+  letter-spacing: -0.18px;
+
+  color: var(--clr-white);
+  border: 2px solid transparent;
+  transition: all 0.6s ease;
+}
+
+.btn--primary {
+  background-color: var(--clr-accent);
+  color: var(--clr-primary);
+}
+
+.btn--primary:is(:hover, :focus-visible) {
+  color: var(--clr-accent);
+  background-color: transparent;
+  border-color: var(--clr-accent);
+}
+.btn--secondary {
+  color: var(clr--white);
+  position: relative;
+}
+.btn--secondary::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 2.5px;
+  background-color: var(--clr-accent);
+  bottom: 1rem;
+  width: 80%;
+}
+.btn--secondary:is(:hover, :focus-visible) {
+  color: var(--clr-accent);
+}
