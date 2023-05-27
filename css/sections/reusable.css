@@ -31,7 +31,10 @@ header .heading--primary {
   line-height: 178%;
   color: var(--clr-primary);
 }
-
+.test .heading--secondary,
+.test .para {
+  color: var(--clr-white);
+}
 .number-bullet {
   width: 5.6rem;
   height: 5.6rem;
